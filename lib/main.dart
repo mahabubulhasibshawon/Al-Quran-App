@@ -1,3 +1,4 @@
+import 'package:al_quran_app/presentation/detail_screen.dart';
 import 'package:al_quran_app/presentation/splash_screen.dart';
 import 'package:al_quran_app/utils/theme.dart';
 import 'package:flutter/material.dart';
