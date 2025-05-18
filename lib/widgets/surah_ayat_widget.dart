@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SurahAyatWidget extends StatelessWidget {
-  const SurahAyatWidget({super.key});
+  final int index;
+  final String arabicAyat;
+  final String banglaAyat;
+  const SurahAyatWidget({super.key, required this.index, required this.arabicAyat, required this.banglaAyat});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 183,
+      // height: 183,
       child: Column(
         spacing: 10,
         children: [
@@ -28,7 +32,7 @@ class SurahAyatWidget extends StatelessWidget {
                       shape: BoxShape.circle,
                       color: Theme.of(context).primaryColor,
                     ),
-                    child: Center(child: Text('1', style: TextStyle(color: Colors.white),),),
+                    child: Center(child: Text(index.toString(), style: TextStyle(color: Colors.white),),),
                   ),
                   Spacer(),
                   IconButton(onPressed: () {}, icon: SvgPicture.asset('assets/svg/share_icon.svg')),
@@ -38,8 +42,9 @@ class SurahAyatWidget extends StatelessWidget {
               ),
             ),
           ),
-          Text('الْحَمْدُ لِلَّهِ رَبِّ الْعٰلَمِينَ', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
-          Text('সমস্ত প্রশংসা আল্লাহর জন্য, যিনি সৃষ্টিকুলের রব।', style: TextStyle(fontSize: 16),)
+          // Text('الْحَمْدُ لِلَّهِ رَبِّ الْعٰلَمِينَ', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+          Text(arabicAyat, style: GoogleFonts.reemKufiInk(fontSize: 18, fontWeight: FontWeight.bold),),
+          Text(banglaAyat, style: GoogleFonts.atma(fontSize: 16), textAlign: TextAlign.center,)
         ],
       ),
     );

@@ -27,7 +27,7 @@ class SurahTab extends StatelessWidget {
                     MaterialPageRoute(
                       builder:
                           (context) =>
-                              DetailScreen(surahName: surah.englishName, revelationType: surah.revelationType, numberOfAyahs: surah.numberOfAyahs.toString(),),
+                              DetailScreen(surahNo: surah.number!,surahName: surah.englishName, revelationType: surah.revelationType, numberOfAyahs: surah.numberOfAyahs.toString(),),
                     ),
                   );
                 },
