@@ -69,15 +69,6 @@ class SplashScreen extends StatelessWidget {
                 ),
               ],
             )
-            // Stack(
-            //   children: [
-            //     Container(
-            //       decoration: BoxDecoration(),
-            //       child: Image.asset('assets/splash_img.png'),
-            //     ),
-            //     Positioned(child: ElevatedButton(onPressed: () {}, child: Text('btn')))
-            //   ],
-            // ),
           ],
         ),
       ),

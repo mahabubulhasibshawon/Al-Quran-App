@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:al_quran_app/models/surah_details_model.dart';
 import 'package:al_quran_app/models/surah_list_model.dart';
 import 'package:http/http.dart' as http;

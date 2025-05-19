@@ -73,31 +73,3 @@ class SurahTileWidget extends StatelessWidget {
     );
   }
 }
-
-
-// Row(
-//   spacing: 10,
-//   children: [
-//     Stack(children: [
-//       SvgPicture.asset('assets/svg/surah_number.svg'),
-//       SizedBox(
-//         height: 36,
-//         width: 36,
-//         child: Center(
-//           child: Text('${surah_number}'),
-//         ),
-//       )
-//       ],),
-//     Column(
-//       crossAxisAlignment: CrossAxisAlignment.start,
-//       children: [
-//         Text('Al-Fatiha'),
-//         Text('MECCAN 7VERSES',style: TextStyle(color: Theme.of(context).shadowColor, fontSize: 12),)
-//       ],
-//     ),
-//     Spacer(),
-//     Text('الفاتحة', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Theme.of(context).primaryColor),)
-//   ],
-// ),
-//   ]
-// ),
